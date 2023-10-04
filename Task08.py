@@ -16,3 +16,11 @@ if k < n * m and ((k % n == 0) or (k % m == 0)):
     print('да')
 else:
     print('нет')
+
+"""
+    Альтернативное решение
+    if c <= b * a and (c % a == 0 or c % b == 0):
+    print('yes')
+else:
+    print('no')
+"""
