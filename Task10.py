@@ -13,6 +13,7 @@
 2
 """
 
+#1 вариант
 n = int(input("Введите колличество монет на столе "))
 sum=0
 
@@ -22,3 +23,23 @@ for num in range(n):
 if (sum <= n//2): print(sum)
 else: print(n-sum)
 
+#2 вариант
+coins = [0, 1, 1, 1, 1, 0]
+print(coins.count(0) 
+if coins.count(0) < coins.count(1) 
+else coins.count(1))
+
+#Альтернативный вариант
+count_zero = 0
+count_one = 0
+
+for coin in coins:
+    if coin == 0:
+        count_zero += 1
+    else:
+        count_one += 1
+
+if count_one > count_zero:
+    print(count_zero)
+else:
+    print(count_one)
